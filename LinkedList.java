@@ -26,7 +26,7 @@ public class LinkedList <A>{
         System.out.println("TailNode Data = " +tempNode.getData());
 
     }
-    //
+
     public void pop(A dataToBeRemoved) {
         if (headNode == null && tailNode == null && tailNode == null) {
             return;
@@ -47,25 +47,5 @@ public class LinkedList <A>{
         prevNode.setNextNode(currNode.getNextNode());
         currNode.setNextNode(null);
 
-    }
-
-
-    //method for insert in between
-
-    public void insert(Node<A> newNodeToBeInserted, int position) {
-        int index = 0;
-
-        Node<A> currNode = headNode;
-
-        while (index < position -2) {
-            currNode = currNode.getNextNode();
-            index++;
-        }
-
-        Node<A> nextNode = currNode.getNextNode();
-
-        newNodeToBeInserted.setNextNode(nextNode);
-
-        currNode.setNextNode(newNodeToBeInserted);
     }
 }

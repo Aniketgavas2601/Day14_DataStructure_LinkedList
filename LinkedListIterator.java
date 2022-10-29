@@ -6,9 +6,9 @@ public class LinkedListIterator <A>{
 
         while(tempNode != null){
 
-            System.out.print(tempNode.getData()+ "->");
+            System.out.print(tempNode.getData()+ " -> ");
             tempNode = tempNode.getNextNode();
-
         }
+
     }
 }
