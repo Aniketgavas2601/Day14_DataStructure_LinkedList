@@ -9,12 +9,13 @@ public class LinkedList <A>{
 
     public void add(Node<A> newNode) {
         if (headNode == null && tailNode == null && tempNode == null) {
-            headNode = newNode;    // headnode =  fistnode value store
-            tailNode = newNode;    // tailNode = fistnode value store
-            tempNode = newNode;    // tempnode = fistnode value store
+            headNode = newNode;    // headNode =  fistNode value store
+            tailNode = newNode;    // tailNode = fistNode value store
+            tempNode = newNode;    // tempNode = fistNode value store
 
-        } else {   // for second or next node
-            tempNode.setNextNode(newNode); // second node  will store in tempnode
+        } else {
+            // for second or next node
+            tempNode.setNextNode(newNode); // second node  will store in tempNode
             tailNode = newNode;
             tailNode.setNextNode(null);
             tempNode = newNode;
@@ -25,5 +26,4 @@ public class LinkedList <A>{
         System.out.println("TailNode Data = " +tempNode.getData());
 
     }
-
 }
