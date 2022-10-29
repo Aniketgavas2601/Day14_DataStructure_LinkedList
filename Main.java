@@ -7,7 +7,6 @@ public class Main {
         Node<Integer> secondNode = new Node<>(30);
         Node<Integer> thirdNode = new Node<>(70);
 
-
         LinkedList<Integer> linkedList = new LinkedList<>();
         linkedList.add(firstNode);
         linkedList.add(secondNode);

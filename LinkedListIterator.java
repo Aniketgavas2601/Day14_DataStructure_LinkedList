@@ -9,6 +9,7 @@ public class LinkedListIterator <A>{
 
             System.out.print(tempNode.getData()+ "->");
             tempNode = tempNode.getNextNode();
+
         }
     }
 }
