@@ -7,7 +7,6 @@ public class LinkedList <A>{
     private Node<A> prevNode = null;
 
     //create methode for adding data in node
-
     public void add(Node<A> newNode) {
         if (headNode == null && tailNode == null && tempNode == null) {
             headNode = newNode;    // headNode =  fistNode value store
@@ -36,17 +35,14 @@ public class LinkedList <A>{
             headNode = currNode.getNextNode();
             currNode.setNextNode(null);
         }
-
         while (dataToBeRemoved != currNode.getData()) {
             prevNode = currNode;
             currNode = currNode.getNextNode();
         }
-
         prevNode.setNextNode(currNode.getNextNode());
         currNode.setNextNode(null);
 
     }
-
 
     //method for insert in between
 
@@ -59,6 +55,7 @@ public class LinkedList <A>{
             currNode = currNode.getNextNode();
             index++;
         }
+
         Node<A> nextNode = currNode.getNextNode();
 
         newNodeToBeInserted.setNextNode(nextNode);
